@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js" defer></script>
+        <script src="app.js" defer></script>
+        <title>Portfolio | Jeremy Hutchings</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    </head>
+    <body>
+      <!-- NAV SECTION -->
+      <header>
+        <nav class="navbar">
+          <a href="index.html" class="nav-name">Jeremy Hutchings</a>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Resume</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+      <section class="hero-section">
+        <div class="color-block">
+          <div class="header-text">
+            <div class="hello-text"><h1>Hey, I'm Jeremy Hutchings</h1></div>
+            <p class="title">Software Engineering Student</p>
+            <p class="title-text">
+              Currently a student at Utah Tech University pursuing a bachelors
+              of science in Software Engineering. I have some experience working with both front and back end
+            </p>
+            <div class="contact-container">
+              <a href="#" class="hero-contact-btn">Contact Now</a>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#000b76"
+            fill-opacity="1"
+            class="curve"
+            d="M0,192L14.1,176C28.2,160,56,128,85,144C112.9,160,141,224,169,208C197.6,192,226,96,254,90.7C282.4,85,311,171,
+            339,213.3C367.1,256,395,256,424,224C451.8,192,480,128,508,101.3C536.5,75,565,85,593,117.3C621.2,149,649,203,678,
+            208C705.9,213,734,171,762,138.7C790.6,107,819,85,847,106.7C875.3,128,904,192,932,202.7C960,213,988,171,1016,
+            170.7C1044.7,171,1073,213,1101,218.7C1129.4,224,1158,192,1186,192C1214.1,192,1242,224,1271,218.7C1298.8,213,
+            1327,171,1355,160C1383.5,149,1412,171,1426,181.3L1440,192L1440,0L1425.9,0C1411.8,0,1384,0,1355,0C1327.1,0,1299,
+            0,1271,0C1242.4,0,1214,0,1186,0C1157.6,0,1129,0,1101,0C1072.9,0,1045,0,1016,0C988.2,0,960,0,932,0C903.5,0,875,0,
+            847,0C818.8,0,791,0,762,0C734.1,0,706,0,678,0C649.4,0,621,0,593,0C564.7,0,536,0,508,0C480,0,452,0,424,0C395.3,0,
+            367,0,339,0C310.6,0,282,0,254,0C225.9,0,198,0,169,0C141.2,0,113,0,85,0C56.5,0,28,0,14,0L0,0Z"
+          ></path>
+        </svg>
+      </section>
+      <main>
+        <section class="programming-languages">
+          <h1>Programming Languages and Frameworks</h1>
+          <div class="languages-container">
+            <i class="devicon-python-plain-wordmark lang-icon"></i>
+            <i class="devicon-mysql-plain-wordmark lang-icon"></i>
+            <i class="devicon-javascript-plain lang-icon"></i>
+            <i class="devicon-vuejs-plain-wordmark lang-icon vue-icon"></i>
+            <i class="devicon-nodejs-plain-wordmark lang-icon"></i>
+            <i class="devicon-mongodb-plain-wordmark lang-icon"></i>
+        </div>
+        </section>
+        <section id="projects">
+          <div id="app" v-cloak>
+            <h1>Projects</h1>
+            <v-app>
+              <!-- Asteroids card -->
+              <div class="d-flex flex-wrap card-small">
+                <template>
+                  <v-hover v-slot="{ hover }">
+                    <v-card
+                      class="mx-auto card-small"
+                      max-width="600px"
+                      min-width="350px"
+                      :elevation="hover ? 12 : 2"
+                    >
+                      <v-img
+                        src="./images/asteroids.gif"
+                        height="400px"
+                      ></v-img>
+                  
+                      <v-card-title :style="{ backgroundColor: '#FF7B5E', color: 'white' }">
+                        Asteroids <i class="devicon-python-plain card-icon"></i>
+                      </v-card-title>
+                      <v-divider></v-divider>
+                      <v-card-text>
+                        <div
+                        class="d-flex flex-column text-h6 white--text pa-8"
+                        style="height: 100%;"
+                        :style="{ backgroundColor: '#FF7B5E', color: 'white' }"
+                        >
+                          <span>This project is based on the game asteroids which I created in my CS-1410 class. The most imporant knowledge I gained from building
+                          this game was a stronger understanding about the concepts of object oriented programming.</span>
+
+                          <span class="pt-3 view-flex">
+                            View on github 
+                            <a href="https://github.com/jhutchings99/CS1410-Asteroids">
+                              <i class="devicon-github-original card-icon"></i>
+                            </a>
+                          </span>
+                        </div>
+                      </v-card-text>
+                    </v-card>
+                  </v-hover>
+                </template>
+
+                <!-- Frogger card -->
+                <template>
+                  <v-hover v-slot="{ hover }">
+                    <v-card
+                      class="mx-auto card-small"
+                      max-width="600px"
+                      min-width="350px"
+                      :elevation="hover ? 12 : 2"
+                    >
+                      <v-img
+                        src="./images/frogger.gif"
+                        height="400px"
+                      ></v-img>
+                  
+                      <v-card-title :style="{ backgroundColor: '#FF7B5E', color: 'white' }">
+                        Frogger <i class="devicon-python-plain card-icon"></i>
+                      </v-card-title>
+                      <v-divider></v-divider>
+                      <v-card-text>
+                        <div
+                        class="d-flex flex-column text-h6 white--text pa-8"
+                        style="height: 100%;"
+                        :style="{ backgroundColor: '#FF7B5E', color: 'white' }"
+                        >
+                        <span>This project is based on the game frogger which I created in my CS-1410 class. This was the first ever project I made using PyGame and also
+                          the first project where I had to implement objects with inheritence and movement.
+                        </span>
+
+                        <span class="pt-3 view-flex">
+                          View on github 
+                          <a href="https://github.com/jhutchings99/CS1410-Frogger">
+                            <i class="devicon-github-original card-icon"></i>
+                          </a>
+                        </span>
+                        </div>
+                      </v-card-text>
+                    </v-card>
+                  </v-hover>
+                </template>
+
+                <!-- address book card -->
+                <template>
+                  <v-hover v-slot="{ hover }">
+                    <v-card
+                      class="mx-auto card-small"
+                      max-width="600px"
+                      min-width="350px"
+                      :elevation="hover ? 12 : 2"
+                    >
+                      <v-img
+                        src="./images/addressbook.png"
+                        height="400px"
+                      ></v-img>
+                  
+                      <v-card-title :style="{ backgroundColor: '#FF7B5E', color: 'white' }">
+                        Address Book <i class="devicon-vuejs-plain card-icon"></i><i class="devicon-nodejs-plain card-icon"></i><i class="devicon-mongodb-plain card-icon"></i>
+                      </v-card-title>
+                      <v-divider></v-divider>
+                      <v-card-text>
+                        <div
+                        class="d-flex flex-column text-h6 white--text pa-8"
+                        style="height: 100%;"
+                        :style="{ backgroundColor: '#FF7B5E', color: 'white' }"
+                        >
+                          <span>I created this project while attending Code School which was a highly competitive program at Utah Tech University during summer 2022.
+                            During the creation of this project I added websockets to update across instances.</span>
+
+                          <span class="pt-3 view-flex">
+                            View on github 
+                            <a href="https://github.com/jhutchings99/codeschool_address_book_2022">
+                              <i class="devicon-github-original card-icon"></i>
+                            </a>
+                            View online
+                            <a href="https://codeschool-2022-addressbook.herokuapp.com/">
+                              <i class="devicon-heroku-original card-icon"></i>
+                            </a>
+                          </span>
+                        </div>
+                      </v-card-text>
+                    </v-card>
+                  </v-hover>
+                </template>
+
+                <!-- Webstore card -->
+                <template>
+                  <v-hover v-slot="{ hover }">
+                    <v-card
+                      class="mx-auto card-small"
+                      max-width="600px"
+                      min-width="350px"
+                      :elevation="hover ? 12 : 2"
+                    >
+                      <v-img
+                        src="./images/webstore.png"
+                        height="400px"
+                      ></v-img>
+                  
+                      <v-card-title :style="{ backgroundColor: '#FF7B5E', color: 'white' }">
+                        Webstore <i class="devicon-vuejs-plain card-icon"></i>
+                      </v-card-title>
+                      <v-divider></v-divider>
+                      <v-card-text>
+                        <div
+                        class="d-flex flex-column text-h6 white--text pa-8"
+                        style="height: 100%;"
+                        :style="{ backgroundColor: '#FF7B5E', color: 'white' }"
+                        >
+                          <span>I created this project while attending Code School which was a highly competitive program at Utah Tech University during summer 2022.
+                            To create this I accessed an API and build a UI based on the API content. Some of the features include adding and removing items from the cart and
+                            a search feature
+                          </span>
+
+                          <span class="pt-3 view-flex">
+                            View on github 
+                            <a href="https://github.com/jhutchings99/codeschool_webstore_2022">
+                              <i class="devicon-github-original card-icon"></i>
+                            </a>
+                          </span>
+                        </div>
+                      </v-card-text>
+                    </v-card>
+                  </v-hover>
+                </template>
+              </div>
+            </v-app>
+          </div>
+        </section>
+      </main>
+    </body>
+</html>

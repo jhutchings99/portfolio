@@ -1,0 +1,368 @@
+/* ======================== CSS RESET ========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+  }
+
+a {
+    text-decoration: none;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+
+
+/* ======================== GLOBAL STYLES AND VARIABLES ========================== */
+:root {
+    --primary-color: #000B76;
+    --secondary-color: #FF7B5E;
+}
+
+#app {
+    height: 2000px;
+}
+
+.card-icon {
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+}
+
+.view-flex {
+  display: flex;
+}
+
+.card-small {
+  flex-wrap: wrap;
+  margin: 24px;
+}
+
+
+
+/* ======================== NAV BAR ========================== */
+header {
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+  
+  .navbar {
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    margin: 0 4%;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .nav-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  .nav-name:hover {
+    color: var(--secondary-color);
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    color: white;
+    transition: 0.3s ease;
+    padding: 5px 10px;
+    position: relative;
+  }
+  
+  .nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover:after {
+    width: 100%;
+  }
+  
+  .scrolling-active {
+    background-color: white;
+    box-shadow: 0 3px 2px -2px black;
+  }
+  
+  
+  .scrolling-active .nav-link {
+    color: black;
+  }
+
+
+  /* HERO SECTION */
+.curve {
+    width: 100%;
+    filter: drop-shadow(0px 10px 0px black);
+    padding-bottom: 50px;
+  }
+  
+  .header-text {
+    padding-top: 10%;
+  }
+  
+  .color-block {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hello-text {
+    width: 360px
+  }
+  
+  .hello-text h1 {
+    color: white;
+    overflow: hidden;
+    border-right: .15em solid var(--secondary-color);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: 
+    typing 2s steps(30, end),
+    blink-caret .5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--secondary-color) }
+  }
+  
+  .header-text {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .title {
+    color: white;
+  }
+  
+  .title-text {
+    color: white;
+    padding-top: 50px;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  
+  .hero-contact-btn {
+    font-size: 20px;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 50px;
+  }
+  
+  .hero-contact-btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+
+
+/* ======================== HAMBURGER MENU ========================== */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  
+  .scrolling-active-bar {
+    background-color: black;
+  }
+  
+  .scroll-active {
+    background-color: white;
+  }
+  
+  .scroll-active-bar {
+    background-color: black;
+  }
+
+
+
+/* ================== PROGRAMMING LANGUAGES =====================*/
+.programming-languages{
+  height: 50vh;
+}
+
+.languages-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.programming-languages h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 5% auto;
+}
+
+.lang-icon {
+  font-size: 150px;
+}
+
+
+/* ================== PROJECTS  =====================*/
+#projects #app{
+  height: 100%;
+  background: #d1d1d1;
+}
+
+#projects #app h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: auto;
+  padding: 5%;
+}
+
+/* ======================== MEDIA QUERIES ========================== */
+@media only screen and (max-width: 800px) {
+    /* NAV BAR*/
+    .hamburger {
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 60px;
+      gap: 0;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 3px 2px -2px black;
+    }
+  
+    .nav-link {
+      color: black;
+    }
+  
+    .navbar {
+      margin: 0 auto;
+    }
+  
+    .nav-item {
+      margin: 16px 0;
+    }
+  
+    .nav-menu.active {
+      left: 0;
+    }
+  
+    .nav-name {
+      font-size: 1rem;
+    }
+
+  /* HERO SECTION */
+  .color-block {
+    height: 85vh;
+    padding: 20px;
+  }
+
+  .hello-text {
+    width: 270px;
+  }
+  
+  .hello-text h1 {
+    font-size: 18px;
+  }
+  
+  .title {
+    font-size: 15px;
+  }
+  
+  .title-text {
+    font-size: 15px;
+  }
+
+  .curve {
+    filter: drop-shadow(0px 40px 0px black);
+  }
+
+  /* PROGRAMMING LANGUAGES */
+  .programming-languages {
+    height: 100%;
+  }
+
+  .languages-container {
+    flex-direction: column;
+  }
+
+  .programming-languages h1{
+    font-size: 25px;
+  }
+
+  .lang-icon {
+    font-size: 100px;
+    padding: 5x;
+  }
+
+  .vue-icon {
+    padding-top: 30px;
+  }
+
+  .card-small {
+    flex-wrap: wrap;
+    margin: 12px;
+  }
+}
