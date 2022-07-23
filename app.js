@@ -99,7 +99,7 @@ var app3 = new Vue({
             this.resetValidation();
             setInterval(function() {
               window.location.reload();
-            }, 500); 
+            }, 1000); 
           }
         }
       },
