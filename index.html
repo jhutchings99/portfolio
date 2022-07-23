@@ -120,6 +120,45 @@
                   </v-hover>
                 </template>
 
+                <!-- address book card -->
+                <template>
+                  <v-hover v-slot="{ hover }">
+                    <v-card
+                      class="mx-auto card-small"
+                      max-width="600px"
+                      min-width="350px"
+                      :elevation="hover ? 12 : 2"
+                    >
+                      <v-img
+                        src="./images/gogas.png"
+                        height="400px"
+                      ></v-img>
+                  
+                      <v-card-title :style="{ backgroundColor: '#FF7B5E', color: 'white' }">
+                        Go Gas <i class="devicon-vuejs-plain card-icon"></i><i class="devicon-nodejs-plain card-icon"></i><i class="devicon-mongodb-plain card-icon"></i>
+                      </v-card-title>
+                      <v-divider></v-divider>
+                      <v-card-text>
+                        <div
+                        class="d-flex flex-column text-h6 white--text pa-8"
+                        style="height: 100%;"
+                        :style="{ backgroundColor: '#FF7B5E', color: 'white' }"
+                        >
+                          <span>I created this project while attending Code School which was a highly competitive program at Utah Tech University during summer 2022.
+                            This was my final project for Code School 2022 which was presented to multiple local companies in St. George, Utah. I had three other group
+                          members and this was my first experience programming in a group</span>
+
+                          <span class="pt-3 view-flex">
+                            View on github 
+                            <a href="https://github.com/jhutchings99/codeschool_address_book_2022">
+                              <i class="devicon-github-original card-icon"></i>
+                            </a>
+                        </div>
+                      </v-card-text>
+                    </v-card>
+                  </v-hover>
+                </template>
+
                 <!-- Frogger card -->
                 <template>
                   <v-hover v-slot="{ hover }">
@@ -235,6 +274,46 @@
                           <span class="pt-3 view-flex">
                             View on github 
                             <a href="https://github.com/jhutchings99/codeschool_webstore_2022">
+                              <i class="devicon-github-original card-icon"></i>
+                            </a>
+                          </span>
+                        </div>
+                      </v-card-text>
+                    </v-card>
+                  </v-hover>
+                </template>
+
+                <!-- address book card -->
+                <template>
+                  <v-hover v-slot="{ hover }">
+                    <v-card
+                      class="mx-auto card-small"
+                      max-width="600px"
+                      min-width="350px"
+                      :elevation="hover ? 12 : 2"
+                    >
+                      <v-img
+                        src="./images/worldclone.png"
+                        height="400px"
+                      ></v-img>
+                  
+                      <v-card-title :style="{ backgroundColor: '#FF7B5E', color: 'white' }">
+                        Wordle Clone <i class="devicon-javascript-plain card-icon"></i>
+                      </v-card-title>
+                      <v-divider></v-divider>
+                      <v-card-text>
+                        <div
+                        class="d-flex flex-column text-h6 white--text pa-8"
+                        style="height: 100%;"
+                        :style="{ backgroundColor: '#FF7B5E', color: 'white' }"
+                        >
+                          <span>I created this project while attending Code School which was a highly competitive program at Utah Tech University during summer 2022.
+                            This project was my first real project in JavaScript and my first time connecting with and using an API and it's endpoints to randomly
+                            choose a word for the user to guess.</span>
+
+                          <span class="pt-3 view-flex">
+                            View on github 
+                            <a href="https://github.com/jhutchings99/Code-School-2022/tree/main/Week%202%20JavaScript/wordle">
                               <i class="devicon-github-original card-icon"></i>
                             </a>
                           </span>
