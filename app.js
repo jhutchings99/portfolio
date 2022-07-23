@@ -47,8 +47,8 @@ var app = new Vue({
   vuetify: new Vuetify(),
 })
 
-var app3 = new Vue({
-    el: '#app3',
+var app2 = new Vue({
+    el: '#app2',
     vuetify: new Vuetify(),
     data: {
         valid: true,

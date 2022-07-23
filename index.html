@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js" defer></script>
+        <script src="https://kit.fontawesome.com/44a9d6cfa6.js" crossorigin="anonymous"></script>
         <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
         </script>
@@ -29,12 +30,10 @@
         <nav class="navbar">
           <a href="index.html" class="nav-name">Jeremy Hutchings</a>
           <ul class="nav-menu">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Home <i class="fa-solid fa-house"></i></a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects <i class="fa-solid fa-diagram-project"></i></a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact <i class="fa-solid fa-message"></i></a></li>
+            <li class="nav-item"><a href="" class="nav-link">Resume <i class="fa-solid fa-file"></i></a></li>
           </ul>
           <div class="hamburger">
             <span class="bar"></span>
@@ -85,6 +84,16 @@
             <i class="devicon-mongodb-plain-wordmark lang-icon"></i>
         </div>
         </section>
+        <div id="programming-languages-curve-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="programming-languages-curve"><path fill="white" fill-opacity="1" d="M0,160L11.4,138.7C22.9,
+            117,46,75,69,74.7C91.4,75,114,117,137,144C160,171,183,181,206,165.3C228.6,149,251,107,274,106.7C297.1,107,320,149,343,138.7C365.7,128,389,64,411,37.3C434.3,11,457,
+            21,480,58.7C502.9,96,526,160,549,186.7C571.4,213,594,203,617,176C640,149,663,107,686,80C708.6,53,731,43,754,48C777.1,53,800,75,823,96C845.7,117,869,139,891,
+            133.3C914.3,128,937,96,960,90.7C982.9,85,1006,107,1029,117.3C1051.4,128,1074,128,1097,112C1120,96,1143,64,1166,53.3C1188.6,43,1211,53,1234,90.7C1257.1,128,1280,
+            192,1303,197.3C1325.7,203,1349,149,1371,154.7C1394.3,160,1417,224,1429,256L1440,288L1440,0L1428.6,0C1417.1,0,1394,0,1371,0C1348.6,0,1326,0,1303,0C1280,0,1257,
+            0,1234,0C1211.4,0,1189,0,1166,0C1142.9,0,1120,0,1097,0C1074.3,0,1051,0,1029,0C1005.7,0,983,0,960,0C937.1,0,914,0,891,0C868.6,0,846,0,823,0C800,0,777,0,754,
+            0C731.4,0,709,0,686,0C662.9,0,640,0,617,0C594.3,0,571,0,549,0C525.7,0,503,0,480,0C457.1,0,434,0,411,0C388.6,0,366,0,343,0C320,0,297,0,274,0C251.4,0,229,0,
+            206,0C182.9,0,160,0,137,0C114.3,0,91,0,69,0C45.7,0,23,0,11,0L0,0Z"></path></svg>
+        </div>
         <section id="projects">
           <div id="app" v-cloak>
             <h1>Projects</h1>
@@ -334,15 +343,22 @@
               </div>
             </v-app>
           </div>
-        </section>
-        <section id="resume">
-            <h1>Resume</h1>
+          <div id="projects-curve-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="projects-curve"><path fill="#d1d1d1" fill-opacity="1" d="M0,32L11.4,69.3C22.9,107,46,181,69,192C91.4,
+              203,114,149,137,138.7C160,128,183,160,206,149.3C228.6,139,251,85,274,80C297.1,75,320,117,343,138.7C365.7,160,389,160,411,160C434.3,160,457,160,480,
+              133.3C502.9,107,526,53,549,69.3C571.4,85,594,171,617,170.7C640,171,663,85,686,64C708.6,43,731,85,754,90.7C777.1,96,800,64,823,69.3C845.7,75,869,117,
+              891,133.3C914.3,149,937,139,960,160C982.9,181,1006,235,1029,224C1051.4,213,1074,139,1097,112C1120,85,1143,107,1166,138.7C1188.6,171,1211,213,1234,
+              197.3C1257.1,181,1280,107,1303,112C1325.7,117,1349,203,1371,218.7C1394.3,235,1417,181,1429,154.7L1440,128L1440,0L1428.6,0C1417.1,0,1394,0,1371,
+              0C1348.6,0,1326,0,1303,0C1280,0,1257,0,1234,0C1211.4,0,1189,0,1166,0C1142.9,0,1120,0,1097,0C1074.3,0,1051,0,1029,0C1005.7,0,983,0,960,0C937.1,0,914,
+              0,891,0C868.6,0,846,0,823,0C800,0,777,0,754,0C731.4,0,709,0,686,0C662.9,0,640,0,617,0C594.3,0,571,0,549,0C525.7,0,503,0,480,0C457.1,0,434,0,411,
+              0C388.6,0,366,0,343,0C320,0,297,0,274,0C251.4,0,229,0,206,0C182.9,0,160,0,137,0C114.3,0,91,0,69,0C45.7,0,23,0,11,0L0,0Z"></path></svg>
+          </div>
         </section>
         <section id="contact">
-          <div id="app3">
-            <v-app :style="{ background: '#d1d1d1', height: '100%' }">
+          <div id="app2">
+            <v-app :style="{ background: '#000B76', height: '100%' }">
               <template>
-                <v-card class="ma-auto pa-12 mx-auto" min-width="70vw">
+                <v-card class="ma-auto pa-12 mx-auto" min-width="70vw" elevation="5">
                   <span class="d-flex justify-center contact-span">Contact</span>
                   <v-divider></v-divider>
                   <v-form
