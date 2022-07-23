@@ -45,10 +45,62 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 var app = new Vue({
   el: '#app',
   vuetify: new Vuetify(),
-  data: {
-    
-  },
-  methods: {
-
-  }
 })
+
+var app3 = new Vue({
+    el: '#app3',
+    vuetify: new Vuetify(),
+    data: {
+        valid: true,
+        name: '',
+        nameRules: [
+          v => !!v || 'Name is required',
+        ],
+
+        email: '',
+        emailRules: [
+          v => !!v || 'E-mail is required',
+          v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+        ],
+
+        subject: '',
+        subjectRules: [
+          v => !!v || 'Subject is required',
+        ],
+
+        message: '',
+        messageRules: [
+          v => !!v || 'Message is required',
+        ],
+      },
+      methods: {
+        validate: function () {
+          this.$refs.form.validate()
+        },
+        reset () {
+          this.$refs.form.reset()
+        },
+        resetValidation () {
+          this.$refs.form.resetValidation()
+        },
+
+        sendEmail: function () {
+          if (this.valid) {
+            console.log('send')
+            var templateParams = {
+              name: this.name,
+              email: this.email,
+              subject: this.subject,
+              message: this.message,
+            }
+
+            emailjs.send("gmail","template_9368y1w", templateParams);
+            this.reset();
+            this.resetValidation();
+            setInterval(function() {
+              window.location.reload();
+            }, 500); 
+          }
+        }
+      },
+  })
