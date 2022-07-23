@@ -279,25 +279,7 @@ header {
   background-color: var(--primary-color);
 }
 
-
-/* ================== RESUME  =====================*/
-#resume {
-  height: 1000px;
-  background: white;
-}
-
-#resume h1 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-  margin: auto;
-}
-
 /* ================== CONTACT  =====================*/
-#contact {
-  height: 100px;
-}
-
 .contact-span {
   font-weight: bold;
   text-transform: uppercase;
@@ -305,8 +287,68 @@ header {
   color: var(--secondary-color)
 }
 
+.contact-curve {
+  width: 100%;
+  filter: drop-shadow(0px 10px 0px black);
+}
+
+#contact-curve-container {
+  background-color: var(--secondary-color);
+}
+
+
+/* ================== FOOTER  =====================*/
+#footer {
+  height: 200px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+  padding: 20px;
+}
+
+.footer-nav-link {
+  color: black;
+  font-size: 25px;
+}
+
+#footer-copyright {
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+}
+
 
 /* ======================== MEDIA QUERIES ========================== */
+@media only screen and (max-width: 1160px) {
+    /* FOOTER */
+    .footer-menu {
+      width: 95vw;
+      flex-direction: column;
+      height: 100%;
+    }
+  
+    .footer-nav-link {
+      font-size: 20px;
+    }
+  
+    #footer-copyright {
+      font-size: 15px;
+      padding: 10px;
+      background-color: var(--secondary-color);
+      width: 100%;
+      text-align: center;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     /* NAV BAR*/
     .hamburger {
@@ -409,5 +451,24 @@ header {
   .card-small {
     flex-wrap: wrap;
     margin: 12px;
+  }
+
+  /* FOOTER */
+  .footer-menu {
+    width: 95vw;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .footer-nav-link {
+    font-size: 20px;
+  }
+
+  #footer-copyright {
+    font-size: 15px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
   }
 }
