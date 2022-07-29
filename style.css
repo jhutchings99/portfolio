@@ -284,7 +284,7 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 25px;
-  color: var(--secondary-color)
+  color: black;
 }
 
 .contact-curve {
