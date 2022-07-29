@@ -182,7 +182,7 @@ header {
   
   .hero-contact-btn {
     font-size: 20px;
-    color: white;
+    color: black;
     background-color: var(--secondary-color);
     padding: 10px 15px;
     border-radius: 50px;
