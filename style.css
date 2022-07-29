@@ -235,7 +235,7 @@ header {
   align-items: center;
 }
 
-.programming-languages h1{
+.programming-languages h2 {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -262,7 +262,7 @@ header {
   background: #d1d1d1;
 }
 
-#projects #app h1 {
+#projects #app h2 {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -435,7 +435,7 @@ header {
     flex-direction: column;
   }
 
-  .programming-languages h1{
+  .programming-languages h2 {
     font-size: 25px;
   }
 
