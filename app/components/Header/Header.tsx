@@ -1,6 +1,9 @@
 export default function Header() {
   return (
-    <header className="bg-dark-bg h-[200vh] flex justify-center pt-48">
+    <header
+      className="bg-dark-bg h-[95vh] flex justify-center pt-64"
+      id="header"
+    >
       <div>
         <h5 className="text-accent text-2xl">Hey there, my name is</h5>
         <h1 className="text-header text-7xl font-bold pt-4">

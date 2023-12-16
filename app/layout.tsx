@@ -6,6 +6,11 @@ import Cursor from "./components/CustomCursor/Cursor";
 import Header from "./components/Header/Header";
 import ReduxProvider from "./components/ReduxProvider/ReduxProvider";
 import SocialLinks from "./components/SocialLinks/SocialLinks";
+import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -27,6 +32,11 @@ export default function RootLayout({
           <Cursor />
           <SocialLinks />
           <Header />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+          <Footer />
           {children}
         </ReduxProvider>
       </body>
