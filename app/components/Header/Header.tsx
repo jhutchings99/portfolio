@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header
-      className="bg-dark-bg h-[95vh] flex justify-center pt-64"
+      className="bg-dark-bg h-[80vh] flex justify-center pt-64"
       id="header"
     >
       <div>

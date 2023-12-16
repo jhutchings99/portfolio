@@ -16,6 +16,7 @@
   transition: all 100ms ease;
   transition-property: opacity, background-color, transform;
   pointer-events: none;
+  z-index: 999;
 }
 
 html,
