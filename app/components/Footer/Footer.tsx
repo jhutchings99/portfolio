@@ -43,6 +43,9 @@ export default function Footer() {
         >
           <p className="text-sub hover:text-text">Contact</p>
         </Link>
+        <a href="/resume.pdf" download="Resume.pdf">
+          <p className="text-sub hover:text-text">Resume</p>
+        </a>
       </div>
     </div>
   );

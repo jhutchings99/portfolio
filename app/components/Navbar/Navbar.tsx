@@ -65,16 +65,14 @@ export default function Navbar() {
             <p className="text-accent">04.</p>
             <p className="text-link hover:text-header">Contact</p>
           </Link>
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            spy={true}
+          <a
+            href="/resume.pdf"
+            download="Resume.pdf"
             className="flex items-center gap-1"
           >
             <p className="text-accent">05.</p>
             <p className="text-link hover:text-header">Resume</p>
-          </Link>
+          </a>
         </div>
       </nav>
     );
