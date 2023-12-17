@@ -62,18 +62,20 @@ const Cursor = () => {
   }, []);
 
   return (
-    <div
-      className={
-        "cursor " +
-        (hidden ? "c--hidden " : " ") +
-        (click ? "c--clicked " : " ") +
-        (linkHover ? "c--hovered " : " ")
-      }
-      style={{
-        left: `${position.x}px`,
-        top: `${position.y}px`,
-      }}
-    />
+    <>
+      <div
+        className={
+          "cursor " +
+          (hidden ? "c--hidden " : " ") +
+          (click ? "c--clicked " : " ") +
+          (linkHover ? "c--hovered " : " ")
+        }
+        style={{
+          left: `${position.x}px`,
+          top: `${position.y}px`,
+        }}
+      />
+    </>
   );
 };
 

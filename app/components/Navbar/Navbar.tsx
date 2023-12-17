@@ -22,7 +22,7 @@ export default function Navbar() {
 
   if (isScrolled) {
     return (
-      <nav className="bg-dark-bg flex flex-col items-center px-16 py-4 fixed z-50">
+      <nav className="flex flex-col items-center px-16 py-4 fixed z-50">
         <Image src={Logo} alt="Logo" height={50} width={50} />
         <div className="flex flex-col gap-6 pt-8">
           <Link

@@ -14,7 +14,7 @@ export default function Header() {
         <Image
           src={Orbit}
           alt="Orbit pattern"
-          className="absolute z-0 opacity-30 h-[2000px] w-[2000px] spinning pointer-events-none"
+          className="absolute z-0 opacity-30 h-[1500px] w-[1500px] spinning pointer-events-none"
         />
         <div className="z-10 relative">
           <h5 className="text-accent text-xl">Hey there, my name is</h5>

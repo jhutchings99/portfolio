@@ -47,7 +47,11 @@ body * {
     transform: rotate(360deg);
   }
 }
-
 .spinning {
   animation: spin 500s linear infinite;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
