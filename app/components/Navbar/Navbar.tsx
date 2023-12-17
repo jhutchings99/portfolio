@@ -22,9 +22,9 @@ export default function Navbar() {
 
   if (isScrolled) {
     return (
-      <nav className="bg-dark-bg flex flex-col items-center px-16 py-4 fixed">
+      <nav className="bg-dark-bg flex flex-col items-center px-16 py-4 fixed z-50">
         <Image src={Logo} alt="Logo" height={50} width={50} />
-        <div className="flex flex-col gap-8 pt-8">
+        <div className="flex flex-col gap-6 pt-8">
           <Link
             to="about"
             smooth={true}
@@ -82,7 +82,7 @@ export default function Navbar() {
     return (
       <nav className="bg-dark-bg flex items-center justify-between px-16 py-4">
         <Image src={Logo} alt="Logo" height={50} width={50} />
-        <div className="flex gap-8">
+        <div className="flex gap-6">
           <Link
             to="about"
             smooth={true}

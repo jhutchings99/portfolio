@@ -14,20 +14,15 @@ export default function Header() {
         <Image
           src={Orbit}
           alt="Orbit pattern"
-          layout="fill"
-          objectFit="cover"
-          className="absolute z-1 opacity-30"
+          className="absolute z-0 opacity-30 h-[2000px] w-[2000px] spinning pointer-events-none"
         />
         <div className="z-10 relative">
           <h5 className="text-accent text-xl">Hey there, my name is</h5>
           <TypeAnimation
             sequence={["Jeremy Hutchings"]}
-            wrapper="span"
             speed={10}
             className="text-header text-5xl font-bold pt-4"
-          >
-            Jeremy Hutchings
-          </TypeAnimation>
+          />
           <h2 className="text-sub text-3xl pt-2">
             Full-Stack Software Engineer
           </h2>
@@ -40,7 +35,6 @@ export default function Header() {
               className="text-accent"
               href="https://online.utahtech.edu/immersive/"
               target="_blank"
-              rel="noopener noreferrer"
             >
               Utah Tech Online
             </a>

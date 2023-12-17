@@ -49,5 +49,5 @@ body * {
 }
 
 .spinning {
-  animation: spin 10s linear infinite;
+  animation: spin 500s linear infinite;
 }
