@@ -30,6 +30,7 @@ export default function Contact() {
               type="text"
               name="name"
               className="rounded text-lg p-2 w-[40vw] bg-sub text-dark-bg"
+              required
             />
           </div>
           <div className="flex flex-col text-text">
@@ -38,6 +39,7 @@ export default function Contact() {
               type="email"
               name="email"
               className="rounded text-lg p-2 w-[40vw] bg-sub text-dark-bg"
+              required
             />
           </div>
           <div className="flex flex-col text-text">
@@ -47,6 +49,7 @@ export default function Contact() {
               cols={30}
               rows={10}
               className="rounded text-lg p-2 w-[40vw] bg-sub text-dark-bg"
+              required
             ></textarea>
           </div>
           <button
