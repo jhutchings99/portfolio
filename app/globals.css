@@ -17,6 +17,9 @@
   transition-property: opacity, background-color, transform;
   pointer-events: none;
   z-index: 999;
+  box-shadow:
+    0 0 50px #fd774b,
+    0 0 150px #fd774b;
 }
 
 html,
