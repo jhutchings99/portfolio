@@ -20,6 +20,7 @@ const config: Config = {
         header: "#CCD6F6",
         sub: "#8892B0",
         text: "#5F6E87",
+        hover: "#172648",
       },
     },
   },

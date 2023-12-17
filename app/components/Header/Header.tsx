@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Orbit from "../../assets/orbit.svg";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -39,9 +40,15 @@ export default function Header() {
               Utah Tech Online
             </a>
           </h3>
-          <button className="border-accent border-2 text-accent px-8 py-4 rounded text-xl">
+          <Link
+            className="border-accent border-2 text-accent px-8 py-4 rounded text-xl"
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+          >
             Let&apos;s Connect
-          </button>
+          </Link>
         </div>
       </div>
     </header>

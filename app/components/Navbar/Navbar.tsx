@@ -33,7 +33,7 @@ export default function Navbar() {
             className="flex items-center gap-1"
           >
             <p className="text-accent">01.</p>
-            <p className="text-link">About</p>
+            <p className="text-link hover:text-header">About</p>
           </Link>
           <Link
             to="experience"
@@ -43,7 +43,7 @@ export default function Navbar() {
             className="flex items-center gap-1"
           >
             <p className="text-accent">02.</p>
-            <p className="text-link">Experience</p>
+            <p className="text-link hover:text-header">Experience</p>
           </Link>
           <Link
             to="projects"
@@ -53,7 +53,7 @@ export default function Navbar() {
             className="flex items-center gap-1"
           >
             <p className="text-accent">03.</p>
-            <p className="text-link">Projects</p>
+            <p className="text-link hover:text-header">Projects</p>
           </Link>
           <Link
             to="contact"
@@ -63,7 +63,7 @@ export default function Navbar() {
             className="flex items-center gap-1"
           >
             <p className="text-accent">04.</p>
-            <p className="text-link">Contact</p>
+            <p className="text-link hover:text-header">Contact</p>
           </Link>
           <Link
             to="about"
@@ -73,7 +73,7 @@ export default function Navbar() {
             className="flex items-center gap-1"
           >
             <p className="text-accent">05.</p>
-            <p className="text-link">Resume</p>
+            <p className="text-link hover:text-header">Resume</p>
           </Link>
         </div>
       </nav>
@@ -91,7 +91,7 @@ export default function Navbar() {
             className="flex items-center gap-1"
           >
             <p className="text-accent">01.</p>
-            <p className="text-link">About</p>
+            <p className="text-link hover:text-header">About</p>
           </Link>
           <Link
             to="experience"
@@ -101,7 +101,7 @@ export default function Navbar() {
             className="flex items-center gap-1"
           >
             <p className="text-accent">02.</p>
-            <p className="text-link">Experience</p>
+            <p className="text-link hover:text-header">Experience</p>
           </Link>
           <Link
             to="projects"
@@ -111,7 +111,7 @@ export default function Navbar() {
             className="flex items-center gap-1"
           >
             <p className="text-accent">03.</p>
-            <p className="text-link">Projects</p>
+            <p className="text-link hover:text-header">Projects</p>
           </Link>
           <Link
             to="contact"
@@ -121,18 +121,17 @@ export default function Navbar() {
             className="flex items-center gap-1"
           >
             <p className="text-accent">04.</p>
-            <p className="text-link">Contact</p>
+            <p className="text-link hover:text-header">Contact</p>
           </Link>
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            spy={true}
+
+          <a
+            href="/resume.pdf"
+            download="Resume.pdf"
             className="flex items-center gap-1"
           >
             <p className="text-accent">05.</p>
-            <p className="text-link">Resume</p>
-          </Link>
+            <p className="text-link hover:text-header">Resume</p>
+          </a>
         </div>
       </nav>
     );
