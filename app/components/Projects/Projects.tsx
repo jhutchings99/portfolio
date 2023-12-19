@@ -1,5 +1,6 @@
 import Image from "next/image";
 import GoGas from "../../assets/gogas.png";
+import CertSitter from "../../assets/certsitter.png";
 import Munchy from "../../assets/munchy.png";
 import Tag from "../Tag/Tag";
 import { TbArrowUpRight } from "react-icons/tb";
@@ -57,14 +58,11 @@ export default function Projects() {
           </a>
 
           {/* CertSitter */}
-          <a
-            href="https://delightful-profiterole-d1df4c.netlify.app/"
-            target="_blank"
-          >
+          <a href="https://github.com/88jpl/codeCamp23" target="_blank">
             <div className="flex gap-4 hover:bg-hover px-6 py-6 rounded-xl hover:shadow-lg my-2">
               <div>
                 <Image
-                  src={GoGas}
+                  src={CertSitter}
                   alt="Project 1"
                   width={200}
                   height={48}
