@@ -72,3 +72,14 @@ body {
   stroke-dasharray: 1000;
   animation: draw 3s linear forwards;
 }
+
+@media (max-width: 1280px) {
+  html,
+  body {
+    cursor: default;
+  }
+  html *,
+  body * {
+    cursor: default;
+  }
+}

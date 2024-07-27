@@ -6,20 +6,20 @@ export default function About() {
     <section className="flex justify-center bg-dark-bg h-[60vh]" id="about">
       <div>
         <div className="flex items-center pt-48 pb-16">
-          <div className="w-32 h-px bg-accent mx-4"></div>
-          <h2 className="text-header text-3xl">About Me</h2>
-          <div className="w-96 h-px bg-accent mx-4"></div>
+          <div className="w-6 md:w-12 lg:w-24 xl:w-32 h-px bg-accent mx-4"></div>
+          <h2 className="text-header text-xl md:text-3xl">About Me</h2>
+          <div className="w-24 md:w-48 lg:w-52 xl:w-96 h-px bg-accent mx-4"></div>
         </div>
-        <div className="flex items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-2 md:gap-12">
           <div className="relative">
-            <div className="h-[250px] w-[250px] border-accent border-2 absolute -top-5 -left-5 shadow-lg"></div>
+            <div className="h-[150px] w-[150px] md:h-[250px] md:w-[250px] border-accent border-2 absolute -top-5 -left-5 shadow-lg"></div>
             <Image
               src={Headshot}
               alt="Logo"
-              className="relative shadow-sm h-[250px] w-[250px]"
+              className="relative shadow-sm h-[150px] w-[150px] md:h-[250px] md:w-[250px]"
             />
           </div>
-          <p className="max-w-3xl text-sub text-lg">
+          <p className="max-w-3xl text-sub text-sm md:text-lg p-8">
             Back in 2016 I took my first programming class in high school and
             fell in love, now I am a senior Software Engineering student at Utah
             Tech University, graduating in May 2024. My journey has taken me

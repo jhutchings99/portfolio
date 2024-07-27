@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 export default function Footer() {
   return (
     <div className="h-24 flex flex-col items-center justify-center bg-dark-bg text-header">
-      <p>© 2023 Jeremy Hutchings</p>
+      <p>© 2024 Jeremy Hutchings</p>
       <div className="flex gap-2">
         <Link
           to="about"

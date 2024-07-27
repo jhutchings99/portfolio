@@ -16,6 +16,7 @@ import Footer from "./components/Footer/Footer";
 import SplashScreen from "./components/SplashScreen/SplashScreen";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Education from "./components/Education/Education";
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -57,6 +58,7 @@ export default function RootLayout({
               <SocialLinks />
               <Header />
               <About />
+              <Education />
               <Experience />
               <Projects />
               <Contact />

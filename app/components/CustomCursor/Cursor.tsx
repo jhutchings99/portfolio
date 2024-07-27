@@ -65,7 +65,7 @@ const Cursor = () => {
     <>
       <div
         className={
-          "cursor " +
+          "hidden xl:block cursor " +
           (hidden ? "c--hidden " : " ") +
           (click ? "c--clicked " : " ") +
           (linkHover ? "c--hovered " : " ")

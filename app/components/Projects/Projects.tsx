@@ -8,20 +8,21 @@ import Chord from "../../assets/chord.png";
 import CashFlow from "../../assets/cashflow.jpg";
 import PlantStats from "../../assets/plant-stats.jpg";
 import Fractal from "../../assets/fractal.png";
+import Showcase from "../../assets/showcase.png";
 import Tag from "../Tag/Tag";
 import { TbArrowUpRight } from "react-icons/tb";
 
 export default function Projects() {
   return (
     <section
-      className="flex justify-center bg-dark-bg h-full pb-12"
+      className="flex justify-center bg-dark-bg h-full pb-8 pt-[850px] md:pt-48"
       id="projects"
     >
       <div>
-        <div className="flex items-center pt-48 pb-8">
-          <div className="w-32 h-px bg-accent mx-4"></div>
-          <h2 className="text-header text-3xl">Projects</h2>
-          <div className="w-96 h-px bg-accent mx-4"></div>
+        <div className="flex items-center md:pt-48 pb-16">
+          <div className="w-6 md:w-12 lg:w-24 xl:w-32 h-px bg-accent mx-4"></div>
+          <h2 className="text-header text-xl md:text-3xl">Projects</h2>
+          <div className="w-24 md:w-48 lg:w-52 xl:w-96 h-px bg-accent mx-4"></div>
         </div>
 
         {/* Project List */}
@@ -65,35 +66,32 @@ export default function Projects() {
           </a>
 
           {/* CertSitter */}
-          <a href="https://github.com/88jpl/codeCamp23" target="_blank">
-            <div className="flex gap-4 hover:bg-hover px-6 py-6 rounded-xl hover:shadow-lg my-2">
-              <div>
-                <Image
-                  src={CertSitter}
-                  alt="Project 1"
-                  width={200}
-                  height={48}
-                  className="rounded border-2 border-slate-200/10 hover:border-slate-200/30"
-                />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-header flex items-center gap-2">
-                  CertSitter
-                  <TbArrowUpRight />
-                </h3>
-                <p className="mb-4 text-base font-normal text-sub max-w-3xl pt-1">
-                  CertSitter is a web application that me and my three team
-                  members built for a 24 hour hackathon. It allows restauraunts
-                  to easily manage their employees certifications e.g food
-                  handlers permit and alcohol handlers permit.
-                </p>
-                <div className="flex gap-2 max-w-[20vw] flex-wrap">
-                  <Tag name="React" />
-                  <Tag name="Firebase" />
-                </div>
+          <div className="flex gap-4 hover:bg-hover px-6 py-6 rounded-xl hover:shadow-lg my-2">
+            <div>
+              <Image
+                src={CertSitter}
+                alt="Project 1"
+                width={200}
+                height={48}
+                className="rounded border-2 border-slate-200/10 hover:border-slate-200/30"
+              />
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-header flex items-center gap-2">
+                CertSitter
+              </h3>
+              <p className="mb-4 text-base font-normal text-sub max-w-3xl pt-1">
+                CertSitter is a web application that me and my three team
+                members built for a 24 hour hackathon. It allows restauraunts to
+                easily manage their employees certifications e.g food handlers
+                permit and alcohol handlers permit.
+              </p>
+              <div className="flex gap-2 max-w-[20vw] flex-wrap">
+                <Tag name="React" />
+                <Tag name="Firebase" />
               </div>
             </div>
-          </a>
+          </div>
 
           {/* RPC Chat */}
           <div className="flex gap-4 hover:bg-hover px-6 py-6 rounded-xl hover:shadow-lg my-2">
@@ -146,6 +144,38 @@ export default function Projects() {
               </p>
               <div className="flex gap-2 max-w-[20vw] flex-wrap">
                 <Tag name="Go" />
+              </div>
+            </div>
+          </div>
+
+          {/* Student Showcase */}
+          <div className="flex gap-4 hover:bg-hover px-6 py-6 rounded-xl hover:shadow-lg my-2">
+            <div>
+              <Image
+                src={Showcase}
+                alt="Project 1"
+                width={200}
+                height={48}
+                className="rounded border-2 border-slate-200/10 hover:border-slate-200/30 object-scale-down h-24"
+              />
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-header flex items-center gap-2">
+                Computing Student Showcase
+              </h3>
+              <p className="mb-4 text-base font-normal text-sub max-w-3xl pt-1">
+                The Computing Student Showcase is a web application that I built
+                using Vue.js and MongoDB. It allows students to showcase their
+                projects and connect with other students in the computing
+                program at Utah Tech University. This was built for one of my
+                professors after they approached me with the idea.
+              </p>
+              <div className="flex gap-2 max-w-[20vw] flex-wrap">
+                <Tag name="HTML" />
+                <Tag name="CSS" />
+                <Tag name="Vue.js" />
+                <Tag name="MongoDB" />
+                <Tag name="AWS S3 Bucket" />
               </div>
             </div>
           </div>
