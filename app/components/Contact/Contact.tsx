@@ -12,12 +12,19 @@ export default function Contact() {
         </div>
         <p className="max-w-5xl text-sub p-8">
           Thanks for stopping by! If you&apos;d like to get in touch with me,
-          feel free to use the form below or send me an{" "}
+          feel free to send me an{" "}
           <a href="mailto:jeremyhutchings99@gmail.com" className="text-accent">
             email
+          </a>{" "}
+          or connect with and message me on{" "}
+          <a
+            href="https://www.linkedin.com/in/jeremy-hutchings99/"
+            className="text-accent"
+          >
+            LinkedIn
           </a>
         </p>
-        <form
+        {/* <form
           name="contact"
           method="POST"
           data-netlify="true"
@@ -58,7 +65,7 @@ export default function Contact() {
           >
             Send Message
           </button>
-        </form>
+        </form> */}
       </div>
     </section>
   );
